@@ -2,7 +2,16 @@
 name = "collatz"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Rodolfo Mói de Oliveira <rodmoi.oliveira@gmail.com>"]
+description = """
+Prints the hailstone sequence of a NUMBER"""
+documentation = "https://github.com/rodmoioliveira/collatz"
+homepage = "https://github.com/rodmoioliveira/collatz"
+repository = "https://github.com/rodmoioliveira/collatz"
+license = "Unlicense OR MIT"
+readme = "README.md"
 
 [dependencies]
+clap = { version = "4.4.6", features = ["derive", "env", "cargo", "help"] }
+clap_complete = "4.4.3"
+libc = "0.2.149"
