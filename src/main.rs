@@ -13,6 +13,9 @@ fn reset_sigpipe() {
     }
 }
 
+#[cfg(not(unix))]
+fn reset_sigpipe() {}
+
 fn main() {
     reset_sigpipe();
     let args = collatz::cli::Cli::parse();
