@@ -9,9 +9,17 @@ documentation = "https://github.com/rodmoioliveira/collatz"
 homepage = "https://github.com/rodmoioliveira/collatz"
 repository = "https://github.com/rodmoioliveira/collatz"
 license = "Unlicense OR MIT"
+build = "build.rs"
 readme = "README.md"
+
+[[bin]]
+name = "collatz"
+path = "src/main.rs"
 
 [dependencies]
 clap = { version = "4.4.6", features = ["derive", "env", "cargo", "help"] }
 clap_complete = "4.4.3"
 libc = "0.2.149"
+
+[build-dependencies]
+chrono = "0.4.31"
