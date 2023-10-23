@@ -1,6 +1,6 @@
 # collatz
 
-collatz is a CLI for printing the [hailstone sequence](https://en.wikipedia.org/wiki/Collatz_conjecture) of a NUMBER.
+collatz is a CLI for printing the [hailstone sequence](https://en.wikipedia.org/wiki/Collatz_conjecture) of a number.
 
 [![Build status](https://github.com/rodmoioliveira/collatz/workflows/ci/badge.svg)](https://github.com/rodmoioliveira/collatz/actions)
 
@@ -25,7 +25,7 @@ make install
 ```
 collatz --help
 
-Prints the hailstone sequence of a NUMBER
+Prints the hailstone sequence of a number
 
 Usage: collatz <NUMBER>
 

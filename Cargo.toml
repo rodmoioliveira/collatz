@@ -4,7 +4,7 @@ version = "0.1.2"
 edition = "2021"
 authors = ["Rodolfo Mói de Oliveira <rodmoi.oliveira@gmail.com>"]
 description = """
-Prints the hailstone sequence of a NUMBER"""
+Prints the hailstone sequence of a number"""
 documentation = "https://github.com/rodmoioliveira/collatz"
 homepage = "https://github.com/rodmoioliveira/collatz"
 repository = "https://github.com/rodmoioliveira/collatz"
