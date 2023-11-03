@@ -31,7 +31,7 @@ Usage: collatz <NUMBER>
 
 Arguments:
   <NUMBER>
-          A positive integer between 0 and 4294967295
+          A positive integer between 0 and 340282366920938463463374607431768211455
 
 Options:
   -h, --help
