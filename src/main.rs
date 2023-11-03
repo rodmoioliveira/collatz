@@ -20,7 +20,7 @@ fn main() {
     reset_sigpipe();
     let args = collatz::cli::Cli::parse();
 
-    let seq = collatz::collatz::sequence(args.number);
+    let seq = collatz::hailstone::sequence(args.number);
     println!("step next");
     for (i, n) in seq.iter().enumerate() {
         println!("{s} {n}", s = i + 1);
