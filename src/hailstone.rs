@@ -1,17 +1,28 @@
-pub fn sequence(number: u32) -> Vec<u128> {
-    let mut steps: Vec<u128> = Vec::with_capacity(32);
-    let mut next = number as u128;
+use num::bigint::BigUint;
+use num::Integer;
 
-    while next != 1 {
-        match next % 2 == 0 {
+pub fn sequence(number: u128) -> Vec<BigUint> {
+    if number == 0_u128 {
+        return vec![];
+    }
+
+    let mut steps: Vec<BigUint> = Vec::with_capacity(64);
+    let mut next: BigUint = BigUint::from(number);
+    let zero = num::zero();
+    let one = num::one();
+    let two = &one + &one;
+    let three = &two + &one;
+
+    while next != one {
+        match next.mod_floor(&two) == zero {
             true => {
-                next /= 2;
+                next /= &two;
             }
             false => {
-                next = (next * 3) + 1;
+                next = (&next * &three) + &one;
             }
         }
-        steps.push(next);
+        steps.push(next.clone());
     }
 
     steps
@@ -20,10 +31,19 @@ pub fn sequence(number: u32) -> Vec<u128> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use num::bigint::BigUint;
 
     #[test]
     fn test_sequence() {
         let seq = sequence(10);
-        assert_eq!(seq, vec![5, 16, 8, 4, 2, 1]);
+        let answer: [u128; 6] = [5, 16, 8, 4, 2, 1];
+
+        assert_eq!(
+            seq,
+            answer
+                .into_iter()
+                .map(BigUint::from)
+                .collect::<Vec<BigUint>>()
+        );
     }
 }
