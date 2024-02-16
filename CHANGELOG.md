@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.3.1](https://github.com/rodmoioliveira/collatz/compare/0.3.0...0.3.1) - 2024-02-16
+
+[f978905](https://github.com/rodmoioliveira/collatz/commit/f978905d6d12e0316f188450ee40f1348bcc3c97)...[054e653](https://github.com/rodmoioliveira/collatz/commit/054e653c49bb36c92304a1a72b6156e42cdf72a7)
+
+### Dependencies
+
+- [54da2f5](https://github.com/rodmoioliveira/collatz/commit/54da2f5d7c2d648ddb6bcaba09d8ff15e0a9df2f) - Bump libc from 0.2.151 to 0.2.152
+- [bee3507](https://github.com/rodmoioliveira/collatz/commit/bee3507acf9d15701a1b947ae93d9a27a2cf36f6) - Bump clap from 4.4.13 to 4.4.16
+- [f07b28a](https://github.com/rodmoioliveira/collatz/commit/f07b28a0e075285e231549e1341c8fb426c872f0) - Bump clap from 4.4.16 to 4.4.18
+- [c3fec30](https://github.com/rodmoioliveira/collatz/commit/c3fec3085a237ad6373a05adb6f0814dbda3b9dc) - Bump clap_complete from 4.4.6 to 4.4.9
+- [b1fee3b](https://github.com/rodmoioliveira/collatz/commit/b1fee3bfab146a81d7900d3b9ca5d6ec64f66855) - Bump chrono from 0.4.31 to 0.4.32
+- [9fe2c36](https://github.com/rodmoioliveira/collatz/commit/9fe2c36edbfc0f4183f8a4c11228d28ad50b75b9) - Bump chrono from 0.4.32 to 0.4.33
+- [82aa85e](https://github.com/rodmoioliveira/collatz/commit/82aa85e305c212096b78e516dc11b2cb2a4d387d) - Bump chrono from 0.4.33 to 0.4.34
+- [923b584](https://github.com/rodmoioliveira/collatz/commit/923b584bef8bb54b7446c39408c08adba0de88f8) - Bump libc from 0.2.152 to 0.2.153
+- [4b38ebf](https://github.com/rodmoioliveira/collatz/commit/4b38ebf8573ac9b61c4478eaa6d88b4840a8c55d) - Bump clap from 4.4.18 to 4.5.1
+- [dd5690d](https://github.com/rodmoioliveira/collatz/commit/dd5690dd1c857abfde860ef23505bdfa5c4187fc) - Bump clap_complete from 4.4.9 to 4.5.0
+
+### Features
+
+- [054e653](https://github.com/rodmoioliveira/collatz/commit/054e653c49bb36c92304a1a72b6156e42cdf72a7) - Bump bin version to 0.3.1
+
+### Miscellaneous Tasks
+
+- [dec3401](https://github.com/rodmoioliveira/collatz/commit/dec3401a0b9c2ba74a0e759302c6bb7fa8e8da78) - Move code to main.rs
+
 ## [0.3.0](https://github.com/rodmoioliveira/collatz/compare/0.2.0...0.3.0) - 2024-01-07
 
 [dd4a881](https://github.com/rodmoioliveira/collatz/commit/dd4a881abfd3ba961d51ab4ae24cc69d41548480)...[f978905](https://github.com/rodmoioliveira/collatz/commit/f978905d6d12e0316f188450ee40f1348bcc3c97)
