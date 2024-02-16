@@ -120,4 +120,4 @@ jobs:
         echo "target dir is: ${{ env.TARGET_DIR }}"
 
     - name: Run tests ${{ matrix.os }}
-      run: ${{ env.CARGO }} test --verbose --lib ${{ env.TARGET_FLAGS }}
+      run: ${{ env.CARGO }} test --verbose ${{ env.TARGET_FLAGS }}
