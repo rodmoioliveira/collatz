@@ -74,7 +74,7 @@ outdated: ## Display when dependencies are out of date
 	@cargo outdated -wR
 
 tests: ## Run tests
-	@cargo test --lib
+	@cargo test
 
 update: ## Update dependencies
 	@cargo update
