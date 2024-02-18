@@ -30,6 +30,7 @@ commit_preprocessors = [
 ]
 commit_parsers = [
   { message = "^release:*", skip = true },
+  { message = "^feat: bump bin version to.+", skip = true },
   { message = "^Merge Request*", group = "Merge Request" },
   { message = ".+deps.+", group = "Dependencies" },
   { message = "^deps*", group = "Dependencies" },

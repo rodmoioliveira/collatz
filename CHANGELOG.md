@@ -17,10 +17,6 @@
 - [4b38ebf](https://github.com/rodmoioliveira/collatz/commit/4b38ebf8573ac9b61c4478eaa6d88b4840a8c55d) - Bump clap from 4.4.18 to 4.5.1
 - [dd5690d](https://github.com/rodmoioliveira/collatz/commit/dd5690dd1c857abfde860ef23505bdfa5c4187fc) - Bump clap_complete from 4.4.9 to 4.5.0
 
-### Features
-
-- [054e653](https://github.com/rodmoioliveira/collatz/commit/054e653c49bb36c92304a1a72b6156e42cdf72a7) - Bump bin version to 0.3.1
-
 ### Miscellaneous Tasks
 
 - [dec3401](https://github.com/rodmoioliveira/collatz/commit/dec3401a0b9c2ba74a0e759302c6bb7fa8e8da78) - Move code to main.rs
@@ -40,10 +36,6 @@
 - [c92c7f6](https://github.com/rodmoioliveira/collatz/commit/c92c7f670e6b2eca12b7d22cadef23642b26bae6) - Bump clap_complete from 4.4.5 to 4.4.6
 - [9de7647](https://github.com/rodmoioliveira/collatz/commit/9de7647fc536c05b91f08b6767ecaa49dd2e3750) - Bump clap from 4.4.11 to 4.4.13
 
-### Features
-
-- [f978905](https://github.com/rodmoioliveira/collatz/commit/f978905d6d12e0316f188450ee40f1348bcc3c97) - Bump bin version to 0.3.0
-
 ## [0.2.0](https://github.com/rodmoioliveira/collatz/compare/0.1.2...0.2.0) - 2023-11-03
 
 [272a761](https://github.com/rodmoioliveira/collatz/commit/272a7613da2bea9b6ae4c836cb3db95fc863f551)...[dd4a881](https://github.com/rodmoioliveira/collatz/commit/dd4a881abfd3ba961d51ab4ae24cc69d41548480)
@@ -56,7 +48,6 @@
 ### Features
 
 - [d00e3a6](https://github.com/rodmoioliveira/collatz/commit/d00e3a6f50804e5abdd71a903cae93e3bb672fee) - Add bigint and support for u128 inputs
-- [dd4a881](https://github.com/rodmoioliveira/collatz/commit/dd4a881abfd3ba961d51ab4ae24cc69d41548480) - Bump bin version to 0.2.0
 
 ### Miscellaneous Tasks
 
@@ -70,18 +61,6 @@
 ### Bug Fixes
 
 - [37e724a](https://github.com/rodmoioliveira/collatz/commit/37e724aae837279951a6725b99caa081c70246e7) - Fix broken build on windows
-
-### Features
-
-- [272a761](https://github.com/rodmoioliveira/collatz/commit/272a7613da2bea9b6ae4c836cb3db95fc863f551) - Bump bin version to 0.1.2
-
-## [0.1.1](https://github.com/rodmoioliveira/collatz/compare/0.1.0...0.1.1) - 2023-10-20
-
-[118b789](https://github.com/rodmoioliveira/collatz/commit/118b789e6378cea0104840680d2f7a9b47a23117)...[2e7ef76](https://github.com/rodmoioliveira/collatz/commit/2e7ef7628bb70d48667a09306846bde4102f00dd)
-
-### Features
-
-- [2e7ef76](https://github.com/rodmoioliveira/collatz/commit/2e7ef7628bb70d48667a09306846bde4102f00dd) - Bump bin version to 0.1.1
 
 ## [0.1.0](https://github.com/rodmoioliveira/collatz/compare/...0.1.0) - 2023-10-20
 
