@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.3.2](https://github.com/rodmoioliveira/collatz/compare/0.3.1...0.3.2) - 2024-02-19
+
+[054e653](https://github.com/rodmoioliveira/collatz/commit/054e653c49bb36c92304a1a72b6156e42cdf72a7)...[f41a755](https://github.com/rodmoioliveira/collatz/commit/f41a755a4267a3c064e2cdad9fc429f94eef5d5d)
+
+### CI
+
+- [d3897f2](https://github.com/rodmoioliveira/collatz/commit/d3897f2f87ca9a8f63f96efde1ca995348b2f20e) - Add auto-merge CI
+- [e746006](https://github.com/rodmoioliveira/collatz/commit/e74600611bef823ccf650406e5fd6f6d7171ea9e) - Update Makefile recipes
+
+### Dependencies
+
+- [4d786d8](https://github.com/rodmoioliveira/collatz/commit/4d786d8d754393299ec3a8397cefde33440b1098) - Bump clap_complete from 4.5.0 to 4.5.1
+
+### Documentation
+
+- [728b028](https://github.com/rodmoioliveira/collatz/commit/728b0282922a6525057059313c83392b35245278) - Add skip to commit_parsers
+
 ## [0.3.1](https://github.com/rodmoioliveira/collatz/compare/0.3.0...0.3.1) - 2024-02-16
 
 [f978905](https://github.com/rodmoioliveira/collatz/commit/f978905d6d12e0316f188450ee40f1348bcc3c97)...[054e653](https://github.com/rodmoioliveira/collatz/commit/054e653c49bb36c92304a1a72b6156e42cdf72a7)
