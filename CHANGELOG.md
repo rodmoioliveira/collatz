@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.4](https://github.com/rodmoioliveira/collatz/compare/0.3.3...0.3.4) - 2024-03-13
+
+[d03e3fc](https://github.com/rodmoioliveira/collatz/commit/d03e3fc3a042ac54a5125f59b13a8b1525c0dce0)...[86bc701](https://github.com/rodmoioliveira/collatz/commit/86bc701f736d776af8ee8a992ca8d47d39ebd048)
+
+### Releases
+
+- [33d7a51](https://github.com/rodmoioliveira/collatz/commit/33d7a51e78b1f29194e70eae66a0de04ce309974) - 0.3.3
+- [86bc701](https://github.com/rodmoioliveira/collatz/commit/86bc701f736d776af8ee8a992ca8d47d39ebd048) - Bump version
+
 ## [0.3.3](https://github.com/rodmoioliveira/collatz/compare/0.3.2...0.3.3) - 2024-03-13
 
 [f41a755](https://github.com/rodmoioliveira/collatz/commit/f41a755a4267a3c064e2cdad9fc429f94eef5d5d)...[d03e3fc](https://github.com/rodmoioliveira/collatz/commit/d03e3fc3a042ac54a5125f59b13a8b1525c0dce0)
@@ -11,6 +20,11 @@
 ### Miscellaneous Tasks
 
 - [371927c](https://github.com/rodmoioliveira/collatz/commit/371927c658d406dd966034a2335f360eea87277b) - Replace ructions for dtolnay/rust-toolchain
+
+### Releases
+
+- [dd022c6](https://github.com/rodmoioliveira/collatz/commit/dd022c658dd2f2f49b7b3c6dcee4f40b06357731) - 0.3.2
+- [d03e3fc](https://github.com/rodmoioliveira/collatz/commit/d03e3fc3a042ac54a5125f59b13a8b1525c0dce0) - Bump version
 
 ## [0.3.2](https://github.com/rodmoioliveira/collatz/compare/0.3.1...0.3.2) - 2024-02-19
 
@@ -28,6 +42,11 @@
 ### Documentation
 
 - [728b028](https://github.com/rodmoioliveira/collatz/commit/728b0282922a6525057059313c83392b35245278) - Add skip to commit_parsers
+
+### Releases
+
+- [0e717a6](https://github.com/rodmoioliveira/collatz/commit/0e717a699c1a0762c627eca60d7328cc32efc8e4) - 0.3.1
+- [f41a755](https://github.com/rodmoioliveira/collatz/commit/f41a755a4267a3c064e2cdad9fc429f94eef5d5d) - Bump bin version to 0.3.2
 
 ## [0.3.1](https://github.com/rodmoioliveira/collatz/compare/0.3.0...0.3.1) - 2024-02-16
 
@@ -50,6 +69,11 @@
 
 - [dec3401](https://github.com/rodmoioliveira/collatz/commit/dec3401a0b9c2ba74a0e759302c6bb7fa8e8da78) - Move code to main.rs
 
+### Releases
+
+- [7826a39](https://github.com/rodmoioliveira/collatz/commit/7826a397f83c51a4c7967f31ba6ba112b9aed142) - 0.3.0
+- [054e653](https://github.com/rodmoioliveira/collatz/commit/054e653c49bb36c92304a1a72b6156e42cdf72a7) - Bump bin version to 0.3.1
+
 ## [0.3.0](https://github.com/rodmoioliveira/collatz/compare/0.2.0...0.3.0) - 2024-01-07
 
 [dd4a881](https://github.com/rodmoioliveira/collatz/commit/dd4a881abfd3ba961d51ab4ae24cc69d41548480)...[f978905](https://github.com/rodmoioliveira/collatz/commit/f978905d6d12e0316f188450ee40f1348bcc3c97)
@@ -64,6 +88,11 @@
 - [273a280](https://github.com/rodmoioliveira/collatz/commit/273a280a9faed049ed77da161d955e903348d1e4) - Bump clap_complete from 4.4.4 to 4.4.5
 - [c92c7f6](https://github.com/rodmoioliveira/collatz/commit/c92c7f670e6b2eca12b7d22cadef23642b26bae6) - Bump clap_complete from 4.4.5 to 4.4.6
 - [9de7647](https://github.com/rodmoioliveira/collatz/commit/9de7647fc536c05b91f08b6767ecaa49dd2e3750) - Bump clap from 4.4.11 to 4.4.13
+
+### Releases
+
+- [cc52d77](https://github.com/rodmoioliveira/collatz/commit/cc52d7792fc45a08742c91e982bb3621a395ff42) - 0.2.0
+- [f978905](https://github.com/rodmoioliveira/collatz/commit/f978905d6d12e0316f188450ee40f1348bcc3c97) - Bump bin version to 0.3.0
 
 ## [0.2.0](https://github.com/rodmoioliveira/collatz/compare/0.1.2...0.2.0) - 2023-11-03
 
@@ -83,6 +112,11 @@
 - [96ee186](https://github.com/rodmoioliveira/collatz/commit/96ee18673994fade2e0565f9ac859c76f3b9cbbd) - Lowercase word
 - [dab4e38](https://github.com/rodmoioliveira/collatz/commit/dab4e385a686046be4e4b4c1f612889bf0ef9fd0) - Rename collatz file to hailstone
 
+### Releases
+
+- [0b128da](https://github.com/rodmoioliveira/collatz/commit/0b128da036ad8458fa2acc2fc7954e14cdae43eb) - 0.1.2
+- [dd4a881](https://github.com/rodmoioliveira/collatz/commit/dd4a881abfd3ba961d51ab4ae24cc69d41548480) - Bump bin version to 0.2.0
+
 ## [0.1.2](https://github.com/rodmoioliveira/collatz/compare/0.1.1...0.1.2) - 2023-10-20
 
 [2e7ef76](https://github.com/rodmoioliveira/collatz/commit/2e7ef7628bb70d48667a09306846bde4102f00dd)...[272a761](https://github.com/rodmoioliveira/collatz/commit/272a7613da2bea9b6ae4c836cb3db95fc863f551)
@@ -90,6 +124,20 @@
 ### Bug Fixes
 
 - [37e724a](https://github.com/rodmoioliveira/collatz/commit/37e724aae837279951a6725b99caa081c70246e7) - Fix broken build on windows
+
+### Releases
+
+- [878ffc3](https://github.com/rodmoioliveira/collatz/commit/878ffc353b15913f10b758ae1bfcecb027349d85) - 0.1.1
+- [272a761](https://github.com/rodmoioliveira/collatz/commit/272a7613da2bea9b6ae4c836cb3db95fc863f551) - Bump bin version to 0.1.2
+
+## [0.1.1](https://github.com/rodmoioliveira/collatz/compare/0.1.0...0.1.1) - 2023-10-20
+
+[118b789](https://github.com/rodmoioliveira/collatz/commit/118b789e6378cea0104840680d2f7a9b47a23117)...[2e7ef76](https://github.com/rodmoioliveira/collatz/commit/2e7ef7628bb70d48667a09306846bde4102f00dd)
+
+### Releases
+
+- [934ba2a](https://github.com/rodmoioliveira/collatz/commit/934ba2a6b0463b0343a205f383459af0acf1672f) - 0.1.0
+- [2e7ef76](https://github.com/rodmoioliveira/collatz/commit/2e7ef7628bb70d48667a09306846bde4102f00dd) - Bump bin version to 0.1.1
 
 ## [0.1.0](https://github.com/rodmoioliveira/collatz/compare/...0.1.0) - 2023-10-20
 
