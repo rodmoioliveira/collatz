@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.3](https://github.com/rodmoioliveira/collatz/compare/0.3.2...0.3.3) - 2024-03-13
+
+[f41a755](https://github.com/rodmoioliveira/collatz/commit/f41a755a4267a3c064e2cdad9fc429f94eef5d5d)...[d03e3fc](https://github.com/rodmoioliveira/collatz/commit/d03e3fc3a042ac54a5125f59b13a8b1525c0dce0)
+
+### Documentation
+
+- [e310118](https://github.com/rodmoioliveira/collatz/commit/e310118f28c47b213c201bf43a2fbcc237c104a6) - Add release shield to README.md
+
+### Miscellaneous Tasks
+
+- [371927c](https://github.com/rodmoioliveira/collatz/commit/371927c658d406dd966034a2335f360eea87277b) - Replace ructions for dtolnay/rust-toolchain
+
 ## [0.3.2](https://github.com/rodmoioliveira/collatz/compare/0.3.1...0.3.2) - 2024-02-19
 
 [054e653](https://github.com/rodmoioliveira/collatz/commit/054e653c49bb36c92304a1a72b6156e42cdf72a7)...[f41a755](https://github.com/rodmoioliveira/collatz/commit/f41a755a4267a3c064e2cdad9fc429f94eef5d5d)
@@ -89,4 +101,5 @@
 
 - [df7c7e4](https://github.com/rodmoioliveira/collatz/commit/df7c7e4b7e06b406754762921f64a110dec22c20) - First commit
 - [434b4f3](https://github.com/rodmoioliveira/collatz/commit/434b4f3bb6072a0c317ad7858004ef23d8d14380) - First commit
+
 
