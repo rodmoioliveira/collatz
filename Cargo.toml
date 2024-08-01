@@ -17,7 +17,7 @@ name = "collatz"
 path = "src/main.rs"
 
 [dependencies]
-clap = { version = "4.5.11", features = ["derive", "env", "cargo", "help"] }
+clap = { version = "4.5.13", features = ["derive", "env", "cargo", "help"] }
 clap_complete = "4.5.11"
 libc = "0.2.155"
 num = { version = "0.4.3", features = ["num-bigint"] }
