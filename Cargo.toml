@@ -19,7 +19,7 @@ path = "src/main.rs"
 [dependencies]
 clap = { version = "4.5.16", features = ["derive", "env", "cargo", "help"] }
 clap_complete = "4.5.16"
-libc = "0.2.156"
+libc = "0.2.157"
 num = { version = "0.4.3", features = ["num-bigint"] }
 
 [build-dependencies]
