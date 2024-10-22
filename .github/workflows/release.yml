@@ -1,17 +1,14 @@
 # Stolen from https://github.com/BurntSushi/ripgrep
 
 name: release
-
 # Only do the release on x.y.z tags.
 on:
   push:
     tags:
       - "[0-9]+.[0-9]+.[0-9]+"
-
 # We need this to be able to create releases.
 permissions:
   contents: write
-
 jobs:
   create-release:
     name: create-release
@@ -41,7 +38,6 @@ jobs:
     outputs:
       version: ${{ env.VERSION }}
       bin_name: "collatz"
-
   build-release:
     name: '[rust] build-release ${{ matrix.target }}'
     needs: ['create-release']
@@ -64,80 +60,67 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - build: linux
+          - build: pinned
+            os: ubuntu-latest
+            rust: 1.74.0
+          - build: stable
+            os: ubuntu-latest
+            rust: stable
+          - build: beta
+            os: ubuntu-latest
+            rust: beta
+          - build: nightly
             os: ubuntu-latest
             rust: nightly
+          - build: stable-musl
+            os: ubuntu-latest
+            rust: stable
             target: x86_64-unknown-linux-musl
-            strip: x86_64-linux-musl-strip
           - build: stable-x86
             os: ubuntu-latest
             rust: stable
             target: i686-unknown-linux-gnu
-            strip: x86_64-linux-gnu-strip
-            qemu: i386
           - build: stable-aarch64
             os: ubuntu-latest
             rust: stable
             target: aarch64-unknown-linux-gnu
-            strip: aarch64-linux-gnu-strip
-            qemu: qemu-aarch64
           - build: stable-arm-gnueabihf
             os: ubuntu-latest
             rust: stable
             target: armv7-unknown-linux-gnueabihf
-            strip: arm-linux-gnueabihf-strip
-            qemu: qemu-arm
           - build: stable-arm-musleabihf
             os: ubuntu-latest
             rust: stable
             target: armv7-unknown-linux-musleabihf
-            strip: arm-linux-musleabihf-strip
-            qemu: qemu-arm
           - build: stable-arm-musleabi
             os: ubuntu-latest
             rust: stable
             target: armv7-unknown-linux-musleabi
-            strip: arm-linux-musleabi-strip
-            qemu: qemu-arm
           - build: stable-powerpc64
             os: ubuntu-latest
             rust: stable
             target: powerpc64-unknown-linux-gnu
-            strip: powerpc64-linux-gnu-strip
-            qemu: qemu-ppc64
           - build: stable-s390x
             os: ubuntu-latest
             rust: stable
             target: s390x-unknown-linux-gnu
-            strip: s390x-linux-gnu-strip
-            qemu: qemu-s390x
           - build: macos
             os: macos-latest
             rust: nightly
-            target: x86_64-apple-darwin
           - build: win-msvc
-            os: windows-latest
+            os: windows-2022
             rust: nightly
-            target: x86_64-pc-windows-msvc
           - build: win-gnu
-            os: windows-latest
+            os: windows-2022
             rust: nightly-x86_64-gnu
-            target: x86_64-pc-windows-gnu
-          - build: win32-msvc
-            os: windows-latest
-            rust: nightly
-            target: i686-pc-windows-msvc
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Install Rust
         uses: dtolnay/rust-toolchain@master
         with:
           toolchain: ${{ matrix.rust }}
           target: ${{ matrix.target }}
-
       - name: Use Cross
         if: matrix.os == 'ubuntu-latest' && matrix.target != ''
         shell: bash
@@ -152,36 +135,31 @@ jobs:
           curl -LO "https://github.com/cross-rs/cross/releases/download/$CROSS_VERSION/cross-x86_64-unknown-linux-musl.tar.gz"
           tar xf cross-x86_64-unknown-linux-musl.tar.gz
           echo "CARGO=cross" >> $GITHUB_ENV
-
       - name: Set target variables
         shell: bash
         run: |
           echo "TARGET_FLAGS=--target ${{ matrix.target }}" >> $GITHUB_ENV
           echo "TARGET_DIR=./target/${{ matrix.target }}" >> $GITHUB_ENV
-
       - name: Show command used for Cargo
         shell: bash
         run: |
           echo "cargo command is: ${{ env.CARGO }}"
           echo "target flag is: ${{ env.TARGET_FLAGS }}"
           echo "target dir is: ${{ env.TARGET_DIR }}"
-
       - name: Build release binary
         shell: bash
         run: |
           ${{ env.CARGO }} build --verbose --release ${{ env.TARGET_FLAGS }}
-          if [ "${{ matrix.os }}" = "windows-latest" ]; then
+          if [ "${{ matrix.os }}" = "windows-2022" ]; then
             bin="target/${{ matrix.target }}/release/${{ needs.create-release.outputs.bin_name }}.exe"
           else
             bin="target/${{ matrix.target }}/release/${{ needs.create-release.outputs.bin_name }}"
           fi
           echo "BIN=$bin" >> $GITHUB_ENV
-
       - name: Strip release binary (macos)
         if: matrix.os == 'macos-latest'
         shell: bash
         run: strip "$BIN"
-
       - name: Strip release binary (cross)
         if: env.CARGO == 'cross'
         shell: bash
@@ -191,37 +169,32 @@ jobs:
             "ghcr.io/cross-rs/${{ matrix.target }}:main" \
             "${{ matrix.strip }}" \
             "/$BIN"
-
       - name: Determine archive name
         shell: bash
         run: |
           echo "ARCHIVE=${{ needs.create-release.outputs.bin_name }}-${{ needs.create-release.outputs.version }}-${{ matrix.target }}" >> $GITHUB_ENV
-
       - name: Creating directory for archive
         shell: bash
         run: |
           mkdir -p "$ARCHIVE"/
           cp "$BIN" "$ARCHIVE"/
           cp {README.md,CHANGELOG.md,LICENSE} "$ARCHIVE"/
-
       - name: Build archive (Windows)
         shell: bash
-        if: matrix.os == 'windows-latest'
+        if: matrix.os == 'windows-2022'
         run: |
           7z a "$ARCHIVE.zip" "$ARCHIVE"
           certutil -hashfile "$ARCHIVE.zip" SHA256 > "$ARCHIVE.zip.sha256"
           echo "ASSET=$ARCHIVE.zip" >> $GITHUB_ENV
           echo "ASSET_SUM=$ARCHIVE.zip.sha256" >> $GITHUB_ENV
-
       - name: Build archive (Unix)
         shell: bash
-        if: matrix.os != 'windows-latest'
+        if: matrix.os != 'windows-2022'
         run: |
           tar czf "$ARCHIVE.tar.gz" "$ARCHIVE"
           shasum -a 256 "$ARCHIVE.tar.gz" > "$ARCHIVE.tar.gz.sha256"
           echo "ASSET=$ARCHIVE.tar.gz" >> $GITHUB_ENV
           echo "ASSET_SUM=$ARCHIVE.tar.gz.sha256" >> $GITHUB_ENV
-
       - name: Upload release archive
         env:
           GITHUB_TOKEN: ${{ github.token }}
