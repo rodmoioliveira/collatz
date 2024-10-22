@@ -1,5 +1,85 @@
 # Changelog
 
+## [0.3.5](https://github.com/rodmoioliveira/collatz/compare/0.3.4...0.3.5) - 2024-10-22
+
+[86bc701](https://github.com/rodmoioliveira/collatz/commit/86bc701f736d776af8ee8a992ca8d47d39ebd048)...[5255357](https://github.com/rodmoioliveira/collatz/commit/5255357e2a2311fc974bbc57a82341e9bdd9a7a6)
+
+### CI
+
+- [4997a63](https://github.com/rodmoioliveira/collatz/commit/4997a63301269c9fe9cbec9df438f82f3ff0ecce) - Add _typos.toml
+- [4c54246](https://github.com/rodmoioliveira/collatz/commit/4c54246a43ba32fc785c227092b24ef3dc0539cd) - Auto-merge if changes are semver-minor
+- [1d676b9](https://github.com/rodmoioliveira/collatz/commit/1d676b90c2957f68a89f5d93f4f129c017b4aff5) - Update ci and release
+
+### Dependencies
+
+- [bf81230](https://github.com/rodmoioliveira/collatz/commit/bf81230d0b5500b287922d5cd2be149bb8de09e5) - Bump chrono from 0.4.34 to 0.4.35
+- [6cc7ea2](https://github.com/rodmoioliveira/collatz/commit/6cc7ea215bb4102130b752a39c8e031fe165194a) - Bump clap from 4.5.1 to 4.5.2
+- [bfad97d](https://github.com/rodmoioliveira/collatz/commit/bfad97d2692a651ff61647fb846ae143333036aa) - Bump clap from 4.5.2 to 4.5.3
+- [4e73179](https://github.com/rodmoioliveira/collatz/commit/4e73179d62137d1bdac38cd210053191c6272b3e) - Bump dependabot/fetch-metadata from 1 to 2
+- [ee66465](https://github.com/rodmoioliveira/collatz/commit/ee664655b80770e7cf1aa84c62415c1c36b2e682) - Bump clap from 4.5.3 to 4.5.4
+- [7418b98](https://github.com/rodmoioliveira/collatz/commit/7418b98127a4c932a0c35f0346c7ce8544f073cb) - Bump chrono from 0.4.35 to 0.4.37
+- [2f2b846](https://github.com/rodmoioliveira/collatz/commit/2f2b8469609aa34ce5c451c8f7bfc8f2f93a1f87) - Bump clap_complete from 4.5.1 to 4.5.2
+- [884a1c1](https://github.com/rodmoioliveira/collatz/commit/884a1c17295f7465f36d650bf8c2c5fd0945dc49) - Bump num from 0.4.1 to 0.4.2
+- [93fb671](https://github.com/rodmoioliveira/collatz/commit/93fb671d180dee18b83069731d8fec2aa7f7ba72) - Bump chrono from 0.4.37 to 0.4.38
+- [c1adba1](https://github.com/rodmoioliveira/collatz/commit/c1adba18b4ec10d3a212ffd81073baad443a8882) - Bump libc from 0.2.153 to 0.2.154
+- [097ddbb](https://github.com/rodmoioliveira/collatz/commit/097ddbbab97c0d09521003b2fab63c20a2cbf110) - Bump num from 0.4.2 to 0.4.3
+- [3b2c30c](https://github.com/rodmoioliveira/collatz/commit/3b2c30cdcd2abbcc56dc8ff2af14ffa31bc4248c) - Bump libc from 0.2.154 to 0.2.155
+- [07ffddb](https://github.com/rodmoioliveira/collatz/commit/07ffddbf4cb799c6462ade264edcd66cfe8a4000) - Bump clap_complete from 4.5.2 to 4.5.3
+- [6074274](https://github.com/rodmoioliveira/collatz/commit/6074274e7680362975069ab7b20d68cfee703a7c) - Bump clap from 4.5.4 to 4.5.6
+- [8bb1658](https://github.com/rodmoioliveira/collatz/commit/8bb16587c27e0c94594badb102ff84e86f5ad9a7) - Bump clap_complete from 4.5.3 to 4.5.5
+- [a34bd1a](https://github.com/rodmoioliveira/collatz/commit/a34bd1a75067c0cd0de4a7d2822a38be35880c9d) - Bump clap from 4.5.6 to 4.5.7
+- [fa530c1](https://github.com/rodmoioliveira/collatz/commit/fa530c1d0ff1e640a21ef1fb7f6d0343953c71c9) - Bump clap_complete from 4.5.5 to 4.5.6
+- [4eaf664](https://github.com/rodmoioliveira/collatz/commit/4eaf664b96548bb125fc2f185e6444d2a1ea5073) - Bump clap from 4.5.7 to 4.5.8
+- [78f110e](https://github.com/rodmoioliveira/collatz/commit/78f110efbe5ee45a5d13bbe86bee597480b2238b) - Bump clap_complete from 4.5.6 to 4.5.7
+- [bf03a68](https://github.com/rodmoioliveira/collatz/commit/bf03a68059cb2708c219d80369b3f3c0e262fdf3) - Bump clap from 4.5.8 to 4.5.9
+- [6b89a62](https://github.com/rodmoioliveira/collatz/commit/6b89a62059d859cadc66ba011d5db987d7a00b15) - Bump clap_complete from 4.5.7 to 4.5.8
+- [d87457f](https://github.com/rodmoioliveira/collatz/commit/d87457fe40f12eff9389bb9a4382747c0a43274b) - Bump clap from 4.5.9 to 4.5.10
+- [2e8356c](https://github.com/rodmoioliveira/collatz/commit/2e8356c1f6889968bfd92e3a5a7f2798ce6d480a) - Bump clap_complete from 4.5.8 to 4.5.9
+- [78d0f0e](https://github.com/rodmoioliveira/collatz/commit/78d0f0e7280040ad2056307a2156adfa246b6e29) - Bump clap from 4.5.10 to 4.5.11
+- [2f14d83](https://github.com/rodmoioliveira/collatz/commit/2f14d83ffda1279501a149a28c4f0643e3003e53) - Bump clap_complete from 4.5.9 to 4.5.11
+- [09edf8c](https://github.com/rodmoioliveira/collatz/commit/09edf8cea02e4d601fe3f601931fad674105c439) - Bump clap from 4.5.11 to 4.5.13
+- [022f0fb](https://github.com/rodmoioliveira/collatz/commit/022f0fbdfda0a5938c300caa37006977e53fffae) - Bump clap_complete from 4.5.11 to 4.5.12
+- [6f2fcaa](https://github.com/rodmoioliveira/collatz/commit/6f2fcaa7e4f283c03376376ab64ac7543b2ae15e) - Bump clap_complete from 4.5.12 to 4.5.13
+- [65a58e0](https://github.com/rodmoioliveira/collatz/commit/65a58e03a0911df94cca7f498b13cb3c99d22966) - Bump clap from 4.5.13 to 4.5.14
+- [35508af](https://github.com/rodmoioliveira/collatz/commit/35508af8d083ce91655c3c5e398b3d2045ab1666) - Bump clap from 4.5.14 to 4.5.15
+- [414180f](https://github.com/rodmoioliveira/collatz/commit/414180fcaf6895c3f836db0d0bc32fabb0965741) - Bump clap_complete from 4.5.13 to 4.5.16
+- [780201a](https://github.com/rodmoioliveira/collatz/commit/780201a6adcf3a727c2e879b315659b25aea5eae) - Bump clap from 4.5.15 to 4.5.16
+- [fec1ec5](https://github.com/rodmoioliveira/collatz/commit/fec1ec5982c15104c118d0bbf4d352c93c5b76c3) - Bump libc from 0.2.155 to 0.2.156
+- [412c028](https://github.com/rodmoioliveira/collatz/commit/412c028940cf39bf9b4efff8538c35b9cab9ac62) - Bump libc from 0.2.156 to 0.2.157
+- [39bd279](https://github.com/rodmoioliveira/collatz/commit/39bd279eef22cfca178c817cc936ad86d2940996) - Bump clap_complete from 4.5.16 to 4.5.18
+- [1232e94](https://github.com/rodmoioliveira/collatz/commit/1232e94f8d3f85129048e3f5723726e1f750a099) - Bump clap_complete from 4.5.18 to 4.5.19
+- [a6cbef7](https://github.com/rodmoioliveira/collatz/commit/a6cbef70db8c4f10e0cad09757dffdb75d6c9a42) - Bump libc from 0.2.157 to 0.2.158
+- [5ff8100](https://github.com/rodmoioliveira/collatz/commit/5ff8100e0e84a470b401b1794de15ef477a3ddb2) - Bump clap_complete from 4.5.19 to 4.5.20
+- [e2f494a](https://github.com/rodmoioliveira/collatz/commit/e2f494ac8b9dae92a0e1cee2ca2f8a4540b6b8ad) - Bump clap_complete from 4.5.20 to 4.5.22
+- [deb213c](https://github.com/rodmoioliveira/collatz/commit/deb213ca7792f313b9e6881735d70567b0c0757a) - Bump clap_complete from 4.5.22 to 4.5.23
+- [d726d14](https://github.com/rodmoioliveira/collatz/commit/d726d144db8cec8c9b6ed0ee49bed9dba6dd2441) - Bump clap_complete from 4.5.23 to 4.5.24
+- [764cd74](https://github.com/rodmoioliveira/collatz/commit/764cd74693ea8db7d7d2b8c1c94f8cdc195743c8) - Bump clap_complete from 4.5.24 to 4.5.25
+- [004eb54](https://github.com/rodmoioliveira/collatz/commit/004eb5474b207a2cb7de18382596c2807133bc41) - Bump clap from 4.5.16 to 4.5.17
+- [4740ff6](https://github.com/rodmoioliveira/collatz/commit/4740ff62cfb5e0d02bcbc29c21bf396a49e044d3) - Bump clap_complete from 4.5.25 to 4.5.26
+- [da4e694](https://github.com/rodmoioliveira/collatz/commit/da4e694767bff8536d3debe78222726672d0be18) - Bump clap_complete from 4.5.26 to 4.5.28
+- [0d36bcb](https://github.com/rodmoioliveira/collatz/commit/0d36bcbf0c077ab29d4e7bd8754729d7899801eb) - Bump clap from 4.5.17 to 4.5.18
+- [5755e4e](https://github.com/rodmoioliveira/collatz/commit/5755e4e4cd236efec3390ff1dfe710cdc114b0eb) - Bump clap_complete from 4.5.28 to 4.5.29
+- [1a41096](https://github.com/rodmoioliveira/collatz/commit/1a41096603459b6602ff9de62a934c3c46a6332a) - Bump libc from 0.2.158 to 0.2.159
+- [66d7fab](https://github.com/rodmoioliveira/collatz/commit/66d7fabdfafc6b018a2969690269841b5d424460) - Bump clap from 4.5.18 to 4.5.19
+- [79ccf8e](https://github.com/rodmoioliveira/collatz/commit/79ccf8ec286decafa32a4696067dd2b941984f7b) - Bump clap_complete from 4.5.29 to 4.5.32
+- [435eaac](https://github.com/rodmoioliveira/collatz/commit/435eaacb922cee59830ec0eecf921bc85544cd17) - Bump clap_complete from 4.5.32 to 4.5.33
+- [e908f41](https://github.com/rodmoioliveira/collatz/commit/e908f414c6c64de77111d4548cbff7852047142e) - Bump clap from 4.5.19 to 4.5.20
+- [ec7e430](https://github.com/rodmoioliveira/collatz/commit/ec7e4309c819b247064d3c5d327ac992ce629ad3) - Bump libc from 0.2.159 to 0.2.160
+- [ffe368d](https://github.com/rodmoioliveira/collatz/commit/ffe368d2268393396d1932fa4dcf082c245ab278) - Bump libc from 0.2.160 to 0.2.161
+
+### Documentation
+
+- [172a9c6](https://github.com/rodmoioliveira/collatz/commit/172a9c6874eb1008ed56543eda0484b5fd216d47) - Add index to README.md
+
+### Miscellaneous Tasks
+
+- [8f65ff9](https://github.com/rodmoioliveira/collatz/commit/8f65ff9fa2e826e87bb2a881d8321d3c461d8377) - Fmt yaml code
+
+### Releases
+
+- [dbd5f56](https://github.com/rodmoioliveira/collatz/commit/dbd5f56d2cebabde41ad5d8436e311805798856c) - 0.3.4
+- [5255357](https://github.com/rodmoioliveira/collatz/commit/5255357e2a2311fc974bbc57a82341e9bdd9a7a6) - Bump version
+
 ## [0.3.4](https://github.com/rodmoioliveira/collatz/compare/0.3.3...0.3.4) - 2024-03-13
 
 [d03e3fc](https://github.com/rodmoioliveira/collatz/commit/d03e3fc3a042ac54a5125f59b13a8b1525c0dce0)...[86bc701](https://github.com/rodmoioliveira/collatz/commit/86bc701f736d776af8ee8a992ca8d47d39ebd048)
