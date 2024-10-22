@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.6](https://github.com/rodmoioliveira/collatz/compare/0.3.5...0.3.6) - 2024-10-22
+
+[5255357](https://github.com/rodmoioliveira/collatz/commit/5255357e2a2311fc974bbc57a82341e9bdd9a7a6)...[6727ade](https://github.com/rodmoioliveira/collatz/commit/6727ade55d1a9328d85db3a1172648ef9ee7d45f)
+
+### CI
+
+- [4a4977c](https://github.com/rodmoioliveira/collatz/commit/4a4977cf8691512bbd8f6c638ddf3f52c9447844) - Fix macos-build
+
+### Releases
+
+- [7ca4553](https://github.com/rodmoioliveira/collatz/commit/7ca455396287b8d765acb8938445905e129d4acb) - 0.3.5
+- [6727ade](https://github.com/rodmoioliveira/collatz/commit/6727ade55d1a9328d85db3a1172648ef9ee7d45f) - Bump version
+
 ## [0.3.5](https://github.com/rodmoioliveira/collatz/compare/0.3.4...0.3.5) - 2024-10-22
 
 [86bc701](https://github.com/rodmoioliveira/collatz/commit/86bc701f736d776af8ee8a992ca8d47d39ebd048)...[5255357](https://github.com/rodmoioliveira/collatz/commit/5255357e2a2311fc974bbc57a82341e9bdd9a7a6)
