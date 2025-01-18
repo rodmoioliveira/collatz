@@ -60,32 +60,36 @@ Options:
 [back^](#index)
 
 ```
-bash-all             Run all bash tests
-bash-check           Check format bash code
-bash-fmt             Format bash code
-bash-lint            Check lint bash code
-doc-changelog        Write CHANGELOG.mode
-doc-readme           Write README.md
-help                 Display this help screen
-rs-audit             Audit Cargo.lock
-rs-audit-fix         Update Cargo.toml to fix vulnerable dependency requirement
-rs-build             Build binary
-rs-cargo-deps        Install cargo dependencies
-rs-check             Run check
-rs-dev               Run check in watch mode
-rs-doc               Open app documentation
-rs-fix               Fix rust code
-rs-fmt               Format rust code
-rs-fmt-fix           Format fix rust code
-rs-install           Install binary
-rs-lint              Lint rust code
-rs-lint-fix          Fix lint rust code
-rs-outdated          Display when dependencies are out of date
-rs-tests             Run tests
-rs-uninstall         Uninstall binary
-rs-update-cargo      Update dependencies
-typos                Check typos
-typos-fix            Fix typos
-yaml-fmt             Format yaml code
-yaml-lint            Check lint yaml code
+bash-all               Run all bash tests
+bash-check             Check format bash code
+bash-deps              Install bash dependencies
+bash-fmt               Format bash code
+bash-lint              Check lint bash code
+comments-tidy          Tidy comments within code
+doc-changelog          Write CHANGELOG.mode
+doc-readme             Write README.md
+dprint-check           Dprint check
+dprint-fmt             Dprint format
+help                   Display this help screen
+makefile-descriptions  Check if all Makefile rules have descriptions
+rs-audit               Audit Cargo.lock
+rs-audit-fix           Update Cargo.toml to fix vulnerable dependency requirement
+rs-build               Build binary
+rs-cargo-deps          Install cargo dependencies
+rs-check               Run check
+rs-dev                 Run check in watch mode
+rs-doc                 Open app documentation
+rs-fix                 Fix rust code
+rs-fmt                 Format rust code
+rs-fmt-fix             Format fix rust code
+rs-install             Install binary
+rs-lint                Lint rust code
+rs-lint-fix            Fix lint rust code
+rs-outdated            Display when dependencies are out of date
+rs-tests               Run tests
+rs-uninstall           Uninstall binary
+rs-update-cargo        Update dependencies
+rs-update-rustup       Update rust
+typos                  Check typos
+typos-fix              Fix typos
 ```
