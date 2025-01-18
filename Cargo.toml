@@ -1,6 +1,6 @@
 [package]
 name = "collatz"
-version = "0.3.6"
+version = "0.4.0"
 authors = ["Rodolfo Mói de Oliveira <rodmoi.oliveira@gmail.com>"]
 build = "build.rs"
 documentation = "https://github.com/rodmoioliveira/collatz"
