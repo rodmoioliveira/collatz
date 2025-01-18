@@ -242,5 +242,3 @@
 
 - [df7c7e4](https://github.com/rodmoioliveira/collatz/commit/df7c7e4b7e06b406754762921f64a110dec22c20) - First commit
 - [434b4f3](https://github.com/rodmoioliveira/collatz/commit/434b4f3bb6072a0c317ad7858004ef23d8d14380) - First commit
-
-

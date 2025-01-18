@@ -7,10 +7,10 @@ collatz is a CLI for printing the [hailstone sequence](https://en.wikipedia.org/
 
 # index
 
-  - [Installation](#installation)
-  - [Building](#building)
-  - [Usage](#usage)
-  - [Make Recipes](#make-recipes)
+- [Installation](#installation)
+- [Building](#building)
+- [Usage](#usage)
+- [Make Recipes](#make-recipes)
 
 # Installation
 

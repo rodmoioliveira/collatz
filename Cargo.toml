@@ -1,16 +1,16 @@
 [package]
 name = "collatz"
 version = "0.3.6"
-edition = "2021"
 authors = ["Rodolfo Mói de Oliveira <rodmoi.oliveira@gmail.com>"]
+build = "build.rs"
+documentation = "https://github.com/rodmoioliveira/collatz"
+edition = "2021"
+homepage = "https://github.com/rodmoioliveira/collatz"
+license = "Unlicense OR MIT"
+readme = "README.md"
+repository = "https://github.com/rodmoioliveira/collatz"
 description = """
 Prints the hailstone sequence of a number"""
-documentation = "https://github.com/rodmoioliveira/collatz"
-homepage = "https://github.com/rodmoioliveira/collatz"
-repository = "https://github.com/rodmoioliveira/collatz"
-license = "Unlicense OR MIT"
-build = "build.rs"
-readme = "README.md"
 
 [[bin]]
 name = "collatz"
