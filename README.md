@@ -30,7 +30,7 @@ in order to compile it. To build `collatz`, run:
 ```
 git clone git@github.com:rodmoioliveira/collatz.git
 cd collatz
-make install
+make rs-build
 ```
 
 # Usage
