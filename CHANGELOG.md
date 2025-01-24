@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.5.0](https://github.com/rodmoioliveira/collatz/compare/0.4.0...0.5.0) - 2025-01-24
+
+[28cd6e7](https://github.com/rodmoioliveira/collatz/commit/28cd6e746059386c291c2e64349834e5d4a3aca2)...[4e58a28](https://github.com/rodmoioliveira/collatz/commit/4e58a28dda654061fa84456f9cc8779fe14e1c68)
+
+### Dependencies
+
+- [e1162e9](https://github.com/rodmoioliveira/collatz/commit/e1162e92164f78efdb2c0428368c22a82a6f4d0f) - Bump clap from 4.5.26 to 4.5.27
+
+### Documentation
+
+- [83ed48e](https://github.com/rodmoioliveira/collatz/commit/83ed48eff45889752281b4aa1b12fb4d07e8eeec) - Add How to Release
+- [fa4fea1](https://github.com/rodmoioliveira/collatz/commit/fa4fea1fa1a4d540411c23bd1a625427062c8045) - Fix typo in Makefile
+- [6764670](https://github.com/rodmoioliveira/collatz/commit/6764670d83deea39a6cdeb338a262674b3a03670) - Fix building directive
+
+### Features
+
+- [4e58a28](https://github.com/rodmoioliveira/collatz/commit/4e58a28dda654061fa84456f9cc8779fe14e1c68) - Add hacker gh-page theme
+
+### Miscellaneous Tasks
+
+- [910028e](https://github.com/rodmoioliveira/collatz/commit/910028e2a1bf5ea45208c1d99b3e75569b40d351) - Rename HOW_TO_RELEASE to RELEASE
+
+### Releases
+
+- [d5ff355](https://github.com/rodmoioliveira/collatz/commit/d5ff3556795c6bea53579f0feacfeee4a533d210) - 0.4.0
+
 ## [0.4.0](https://github.com/rodmoioliveira/collatz/compare/0.3.6...0.4.0) - 2025-01-18
 
 [6727ade](https://github.com/rodmoioliveira/collatz/commit/6727ade55d1a9328d85db3a1172648ef9ee7d45f)...[28cd6e7](https://github.com/rodmoioliveira/collatz/commit/28cd6e746059386c291c2e64349834e5d4a3aca2)
