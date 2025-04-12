@@ -10,6 +10,7 @@ collatz is a CLI for printing the [hailstone sequence](https://en.wikipedia.org/
 - [Installation](#installation)
 - [Building](#building)
 - [Usage](#usage)
+- [Dependencies](#dependencies)
 - [Make Recipes](#make-recipes)
 - [How to Release](#how-to-release)
 
@@ -55,6 +56,15 @@ Options:
   -V, --version
           Print version
 ```
+
+# Dependencies
+
+[back^](#index)
+
+- [clap](https://crates.io/crates/clap) - A simple to use, efficient, and full-featured Command Line Argument Parser
+- [clap_complete](https://crates.io/crates/clap_complete) - Generate shell completion scripts for your clap::Command
+- [libc](https://crates.io/crates/libc) - Raw FFI bindings to platform libraries like libc.
+- [num](https://crates.io/crates/num) - A collection of numeric types and traits for Rust, including bigint,
 
 # Make Recipes
 

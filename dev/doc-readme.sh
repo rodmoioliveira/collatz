@@ -73,6 +73,23 @@ cargo run -- --help
 $(cargo run -- --help)
 \`\`\`
 
+# Dependencies
+
+$(
+    paste -d '@' \
+      <(
+        yq '.dependencies | keys[]' Cargo.toml |
+          sort |
+          sed -E 's@(.+)@- [\1](https://crates.io/crates/\1)@g'
+      ) \
+      <(
+        yq '.dependencies | keys[]' Cargo.toml |
+          sort |
+          xargs -n1 bash -c 'cargo info $0 2>/dev/null | sed -n "2p"'
+      ) |
+      sed 's/@/ - /g'
+  )
+
 # Make Recipes
 
 \`\`\`
